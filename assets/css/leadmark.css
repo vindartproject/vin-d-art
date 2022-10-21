@@ -4463,7 +4463,7 @@ input[type="button"].btn-block {
 }
 
 .nav {
-  height: var(--header-height);
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
