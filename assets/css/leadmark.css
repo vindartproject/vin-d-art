@@ -486,12 +486,8 @@ mark,
 }
 
 .img-fluid {
-   width: 80px;
-   position: absolute;
-   inset: 0;
    margin-left: auto;
    margin-right: auto;
-   top: -3rem;
 }
 
 
@@ -11753,7 +11749,8 @@ textarea.form-control {
 .cards-container{
   grid-template-columns: repeat(2,1fr);
   gap: 5rem 1.5rem;
-  padding-top: 3rem;
+  padding-block: 3rem;
+
 }
 
 .button{
@@ -11763,6 +11760,7 @@ color: white;
 padding: 1rem 1.25rem;
 border-radius: .5rem;
 transition: .3s;
+
 }
 
 .button:hover{
@@ -11771,4 +11769,10 @@ font-size: 1.2rem;
 
 .button__icon{
   font-size: 1.2rem;
+}
+
+.card img{
+  display: block;
+  position: relative;
+  width: 100%;
 }
