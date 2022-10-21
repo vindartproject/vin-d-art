@@ -11734,12 +11734,12 @@ textarea.form-control {
   transform-origin: inherit;
 }
 
-.portfolio-section .portfolio-container .portfolio-item .content-holder .title {
+.portfolio-section  .portfolio-item .content-holder .title {
   font-size: 22px;
   font-weight: 600;
 }
 
-.portfolio-section .portfolio-container .portfolio-item .content-holder .subtitle {
+.portfolio-section  .portfolio-item .content-holder .subtitle {
   font-weight: 500;
   opacity: 1;
 }
@@ -11749,6 +11749,11 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
+.cards-container{
+  
+}
+
 .button{
 display:inline-block;
 background-color: #1b1b1b;
