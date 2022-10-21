@@ -11696,6 +11696,8 @@ textarea.form-control {
 }
 
 .portfolio-section .portfolio-container .portfolio-item {
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem 1.5rem;
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -11711,7 +11713,7 @@ textarea.form-control {
 
   -webkit-transform: translate(0, -350px);
  
-  top: -200%;
+  top: 100%;
   width: 100%;
   height: 100%;
   background: rgba(255, 165, 0,0.8);
@@ -11750,4 +11752,20 @@ textarea.form-control {
   left: 50%;
   opacity: 1;
   visibility: visible;
+}
+.button{
+display:inline-block;
+background-color: #1b1b1b;
+color: white;
+padding: 1rem 1.25rem;
+border-radius: .5rem;
+transition: .3s;
+}
+
+.button:hover{
+font-size: 1.2rem;
+}
+
+.button__icon{
+  font-size: 1.2rem;
 }
