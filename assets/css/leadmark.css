@@ -11701,9 +11701,12 @@ textarea.form-control {
   position: relative;
   padding-left: 0;
   padding-right: 0;
+  height: 132px;
+  background-color: #1b1b1b;
   margin: 10px -5px;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: .5rem;
+  display: grid;
 }
 
 .portfolio-section .portfolio-container .portfolio-item .content-holder {
