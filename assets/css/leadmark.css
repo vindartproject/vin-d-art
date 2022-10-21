@@ -486,9 +486,14 @@ mark,
 }
 
 .img-fluid {
-  max-width: 120%;
-  height: auto;
+   width: 80px;
+   position: absolute;
+   inset: 0;
+   margin-left: auto;
+   margin-right: auto;
+   top: -3rem;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11695,21 +11700,9 @@ textarea.form-control {
   color: #fff;
 }
 
-.portfolio-section .portfolio-container .portfolio-item {
-  grid-template-columns: repeat(2,1fr);
-  gap: 5rem 1.5rem;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  height: 130px;
-  background-color: #1b1b1b;
-  margin: 10px -5px;
-  overflow: hidden;
-  border-radius: .5rem;
-  display: grid;
-}
 
-.portfolio-section .portfolio-container .portfolio-item .content-holder {
+
+.portfolio-section .portfolio-item .content-holder {
   position: sticky;
  
   top: 50%;
@@ -11751,7 +11744,7 @@ textarea.form-control {
   opacity: 1;
 }
 
-.portfolio-section .portfolio-container .portfolio-item:hover .content-holder {
+.portfolio-section  .portfolio-item:hover .content-holder {
   left: 50%;
   opacity: 1;
   visibility: visible;
