@@ -18,48 +18,36 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/imgs/logo2.png" alt="">
             </a>
-            
-            <div class="nav__menu show-menu" id="nav__menu">
-           
-                <ul class="nav__list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Acerca De</a>
-                    </li>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="Tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Blog.html">Blogs</a>
+                        <a class="nav-link" href="#blog">Blogs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
-                    </li>
-                </ul>
-                
-      <!-- toggle button -->
-      <div class="nav__toggle" id="nav__toggle">
-        <i class='bx bx-grid-alt'></i>
-    </div>
-
-
-    <div class="nav__close" id="nav__close">
-        <i class='bx bx-x'></i>
-    </div>
-
+                    </li>  
+                </ul> 
             </div>
         </div>
     </nav>
     <!-- End Of Second Navigation -->
+
 
     <!-- Page Header -->
     <header class="header">
@@ -87,9 +75,9 @@
     <section class="section" id="about">
         <div class="discount__container container grid">
             <div class="row justify-content-between">
-                    <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                        <img src="assets/imgs/semilla_de_cacao-removebg-preview.png" alt="" class="w-100 mt-3 shadow-sm">
-                    </div>
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <img src="assets/imgs/semilla_de_cacao-removebg-preview.png" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
                 <div class="col-md-6 pl-md-5">
                     <div class="row">
                         <div class="col-12 mt-4">
@@ -239,7 +227,7 @@
     <!-- LeadMark js -->
     <script src="./assets/js/main.js"></script>
     <script src="assets/js/leadmark.js"></script>
-  
+
 </body>
 
 </html>
