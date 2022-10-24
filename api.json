@@ -1,72 +1,75 @@
 [
     {
         "nombre":"Vino blanco",
-        "precio":32.000,
+        "precio":32000,
         "id": 1,
-        "thumbnailUrl": "assets/imgs/Proyectovindart.png"
+        "thumbnailUrl": "./assets/imgs/Proyectovindart.png"
     },
 
     {
         "nombre":"Vino ambar",
-        "precio":43.00,
+        "precio":4300,
         "id": 2,
-        "thumbnailUrl": "assets/imgs/vinoambar.png"
+        "thumbnailUrl": "./assets/imgs/vinoambar.png"
+        
+
     },
 
     {
-        "nombre":"chocolate sin azúcar 500gr",
-        "precio":11.000,
+        "nombre":"chocolatesinazúcar500gr",
+        "precio":11000,
         "id": 3,
-        "thumbnailUrl": "assets/imgs/Chocolate sin azúcar 500gr.png"
+        "thumbnailUrl": "./assets/imgs/Chocolatesinazucar500gr.png"
     },
 
     {
         "nombre":"chocolate sin azúcar 250gr",
-        "precio":7.000,
+        "precio":7000,
         "id": 4,
-        "thumbnailUrl": "assets/imgs/Chocolate sin azúcar 250gr.png"
+        "thumbnailUrl": "./assets/imgs/Chocolatesinazucar250gr.png"
     },
 
     {
-        "nombre":"chococolate tradicional 500gr",
-        "precio":11.000,
+        "nombre":"chococolatetradicional500gr",
+        "precio":11000,
         "id": 5,
-        "thumbnailUrl": "assets/imgs/Chocolate tradicional 500gr.png"
+        "thumbnailUrl": "./assets/imgs/Chocolatetradicional500gr.png"
     },
 
     {
         "nombre":"chococolate tradicional 250gr",
-        "precio":7.000,
+        "precio":7000,
         "id": 6,
-        "thumbnailUrl": "assets/imgs/Chocolate tradicional 250gr.png"
+        
+        "thumbnailUrl": "./assets/imgs/Chocolatetradicional250gr.png"
     },
 
     {
         "nombre":"chocolate clavos y canela 500gr",
-        "precio":11.000,
+        "precio":11000,
         "id": 7,
-        "thumbnailUrl": "assets/imgs/Chocolate clavos y canela 500gr.png"
+        "thumbnailUrl": "./assets/imgs/Chocolateclavosycanela500gr.png"
     },
 
     {
         "nombre":"chocolate clavos y canela 250gr",
         "precio":7.000,
         "id": 8,
-        "thumbnailUrl": "assets/imgs/Chocolate clavos y canela 250gr.png"
+        "thumbnailUrl": "./assets/imgs/Chocolateclavosycanela250gr.png"
     },
 
     {
         "nombre":"Brownie con licor de cacao",
         "precio":45.000,
         "id": 9,
-        "thumbnailUrl": "assets/imgs/image0.jpeg"
+        "thumbnailUrl": "./assets/imgs/image0.jpeg"
     },
 
     {
         "nombre":"cupcake de chocolate",
         "precio":17.000,
         "id": 10,
-        "thumbnailUrl": "assets/imgs/"
+        "thumbnailUrl": "./assets/imgs/"
     }
 
 ]

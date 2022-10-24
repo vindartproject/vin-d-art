@@ -10,7 +10,9 @@ const fetchData = async() => {
     try{
         const res =await fetch('api.json')
         const data = await res.json()
-       // console.log(data)
+        
+        pintarCards(data)
+
     } catch (error){
         console.log(error)
     }
@@ -18,9 +20,9 @@ const fetchData = async() => {
 
 const pintarCards = data => {
     data.forEach(producto => {
-         templateCard.queryselector('img').setAttribute("src", producto.thumbnailUrl)
-         templateCard.queryselector('h5').textContent = producto.nombre
-         templateCard.queryselector('p').textContent = producto.precio
+         templateCard.querySelector('img').setAttribute("src", producto.thumbnailUrl)
+         templateCard.querySelector('h5').textContent = producto.nombre
+         templateCard.querySelector('p').textContent = producto.precio
 
          const clone =templateCard.cloneNode(true)
          fragment.appendChild(clone)
