@@ -4492,10 +4492,12 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
-.counter{
+
+
+ .counter{
   position: absolute;
-  top:35px;
-  right:135px;
+  top:26px;
+  right:116px;
   width:18px;
   height: 19px;
   border-radius: 50%;
