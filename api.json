@@ -67,7 +67,7 @@
         "nombre":"cupcake de chocolate",
         "id": 10,
         "precio":17.000,
-        "thumbnailUrl": "./assets/imgs/"
+        "thumbnailUrl": "./assets/imgs/image2.jpeg"
     }
 
 ]
