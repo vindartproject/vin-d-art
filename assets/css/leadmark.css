@@ -11826,10 +11826,11 @@ textarea.form-control {
   bottom: 5.4rem;
   padding: .5rem;
   border-radius: .35rem;
-  display:inline-block;
+
   
   }
-  
-  .button__icon{
+
+  .button__icon{ 
+   display:inline-block;
     font-size: 1.2rem;
   }
