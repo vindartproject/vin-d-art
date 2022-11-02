@@ -15,7 +15,7 @@
     },
 
     {
-        "nombre":"chocolatesinazúcar500gr", 
+        "nombre":"chocolate sin azúcar 500gr", 
         "id": 3,
         "precio":11000,
         "thumbnailUrl": "./assets/imgs/Chocolatesinazucar500gr.png"
