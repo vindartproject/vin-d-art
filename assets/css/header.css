@@ -3,17 +3,22 @@
  .header {
   position: relative;
   height: 100vh;
-  min-height: 500px;
+  min-height: 100px;
   background-size: cover;
   overflow: hidden;
   }
 
   .imgprincipal {
-    height: 100vh;
+    height: 125vh;
     background-size: cover;
     position: relative;  
-    width: 100%;
-    overflow: hidden;
+    width: 220vh;
+    overflow: hidden;  
+    content: '';
+    left: 0;
+    top: 0;
+  
+   background-color: #00000094;
   }
   .header .overlay {
     position: absolute;
