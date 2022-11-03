@@ -35,7 +35,8 @@
                     <path
                         d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
                 </svg>
-                <div class="counter">2</div>
+
+                <div class="counter" id="template-div">0</div>
             </div>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -66,20 +67,22 @@
             <h6 class="section-title text-center">Nuestros Productos</h6>
             <h6 class="section-subtitle mb-5 text-center">Productos 100% naturales, pensados para satisfacer el deseo de
                 todos nuestros clientes.</h6>
-            <div class="filters">
-                <a href="#" data-filter=".new" class="active">
+            <div class="filters" id="filtro-productos">
+                <a href="#" id="class" class="active">
                     Todos
                 </a>
-                <a href="#" data-filter=".advertising">
+                <a href="#" id="class">
                     Vinos
                 </a>
-                <a href="#" data-filter=".branding">
+                <a href="#" id="class">
                     Chocolates
                 </a>
-                <a href="#" data-filter=".web">
+                <a href="#" id="class">
                     Postres
                 </a>
             </div>
+            <!--productos-->
+            <div class="row" id="cards"></div> 
         </div>
 
         <div class="collapse" id="collapseExample">
@@ -113,8 +116,7 @@
                         </td>
                         <td class="font-weight-bold">$ <span>5000</span></td>
                     </template>
-
-                   
+  
                     <template id="template-carrito">
                         <tr>
                             <th scope="row">id</th>
@@ -134,9 +136,10 @@
                 </div>
             </form>
         </div>
-        <div class="row" id="cards"></div>
-        <template id="template-card">
-            <div class="cards-container">
+
+       
+            <div class="cards-container"> 
+            <template id="template-card">
                 <div class="col-md-6 col-lg-4 mb-1 p-5 web new">
                     <div class="card" style="width: 18rem; padding: auto">
                         <div class="products__shape">
@@ -145,14 +148,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Nombre</h5>
                             <p class="card-text">Precio</p>
-                            <button class="button"> Añadir
+                            <button class="button button--flex products__button"> Añadir
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
                         </div>
                     </div>
                 </div>
+             </template>
             </div>
-        </template>
+       
     </section>
 
     <!-- core  -->
@@ -167,7 +171,6 @@
 
     <!-- LeadMark js -->
     <script src="./assets/js/leadmark.js"></script>
-    <script src="./assets/js/compras.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
