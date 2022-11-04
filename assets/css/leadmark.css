@@ -11077,6 +11077,8 @@ textarea.form-control {
   border-width: 0;
 }
 
+
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11422,4 +11424,12 @@ textarea.form-control {
   .button__icon{ 
    display:inline-block;
     font-size: 1.2rem;
+  }
+
+ .card-text{
+    color: #fff;
+  }
+
+  table{
+    color: #fff !important;
   }
