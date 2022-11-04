@@ -4150,12 +4150,39 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
-.shop{
-  position: relative;
-  top: 9.5px;
-  left: 180px;
-  cursor: pointer;
-}
+/* precomposed values 
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+display: none;
+display: contents;
+display: block flow;
+display: inline flow;
+display: inline flow-root;
+display: block flex;
+display: inline flex;
+display: block grid;
+display: inline grid;
+display: block flow-root;
+display: table;
+display: table-row; all table elements have an equivalent CSS display value 
+display: list-item;
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
+ */
+
+ .shop{
+  display: inline-block;
+  right: 40px;
+  line-height: inherit;
+  white-space: nowrap;
+ }
 
  .counter{
   position: relative;
@@ -4178,7 +4205,7 @@ input[type="button"].btn-block {
  top:0; left: 0;
   height:100%; width:100%;
   z-index: 1004;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(19, 19, 19, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
