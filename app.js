@@ -116,7 +116,7 @@ const pintarFooter = () => {
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio ,0)
     // console.log(nPrecio)
 
-    divCantidad.innerText=Object.keys(carrito).length
+    divCantidad.innerText=nCantidad
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
 
