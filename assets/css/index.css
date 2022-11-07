@@ -56,13 +56,13 @@
 
 .about .content h3 {
   color: #fff;
-  font-size: 4rem;
+  font-size:1,4rem;
   margin-top: .5rem;
 }
 
 .about .content p {
   padding: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #aaa;
   line-height: 2;
 }
@@ -157,4 +157,78 @@ video {
 .banner-container .banner .content .btn {
   padding: .8rem 2.5rem;
 }
+
+
+.service .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  background:#2b2b2b66;
+  border:.1rem solid rgba(53, 53, 53, 0.1);
+  border-radius: .5rem;
+  padding:2rem;
+}
+
+.service .box-container .box{
+  text-align: center;
+  flex:1 1 30rem
+}
+
+.service .box-container .box i{
+  font-size: 2rem;
+  color:rgb(138, 132, 48);
+}
+
+.service .box-container .box h3{
+  font-size: 1,5rem;
+  color:var(--black);
+  padding-top: 1rem;
+}
+
+.service .box-container .box p{
+  font-size: 1.5rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+:root {
+  --swiper-navigation-size: 44px;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --orange: #ff7800;
+  --black: #ffffff;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  --border: .2rem solid rgba(0,0,0,.1);
+  --outline: .1rem solid rgba(0,0,0,.1);
+  --outline-hover: .2rem solid var(--black);
+}
+html {
+  font-size: 73.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+
+.color {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .5rem 1rem;
+  font-size: 1.7rem;
+  color: #ac961b;
+  border: 0.2rem solid #8f852b;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.color:hover {
+  background: #92811e;
+  color: #111;
+}
+
 

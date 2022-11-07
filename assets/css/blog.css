@@ -86,9 +86,6 @@ section{
     color:var(--black);
 }
 
-.header .logo i{
-    color:var(--orange);
-}
 
 .logo{
     width: 5px;
@@ -105,23 +102,6 @@ section{
     color:var(--orange);
 }
 
-.header .icons div{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    background: #2c2c2c;
-    color:#fff;
-    font-size: 2rem;
-    margin-left: .3rem;
-    cursor: pointer;
-    text-align: center;
-}
-
-.header .icons div:hover{
-    background: var(--orange);
-    color:#fff;
-}
 
 #menu-btn{
     display: none;
@@ -477,3 +457,92 @@ section{
 }
 
   
+.services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .services .box-container .box {
+    background: #222;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+  }
+  
+  .services .box-container .box:hover {
+    border: 0.2rem solid #29d9d5;
+  }
+  
+  .services .box-container .box i {
+    font-size: 4rem;
+    color: #29d9d5;
+    margin-bottom: 2rem;
+  }
+  
+  .services .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .services .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+  .navbar {
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .navbar {
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
+ 
+
+  .navbar.custom-navbar .nav-link {
+    color: #fff;
+    margin: 0 6px;
+  }
+  
+  .navbar.custom-navbar .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar.custom-navbar.affix {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background: url(../imgs/navbar.png);
+    border-bottom: 1px solid #949b6f17;
+  }
+
+  .shop{
+    display: inline-block;
+    right: 40px;
+    line-height: inherit;
+    white-space: nowrap;
+   }
+  
+   .counter{
+    position: relative;
+    top:-40px;
+    right:-20px;
+    width:18px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #948922;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black  ;
+  } 
