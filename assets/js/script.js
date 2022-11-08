@@ -47,8 +47,8 @@ if (e.target.matches(".cards *")) {
             quantity: 1
         }],
         mode: "subscription",
-      //  successUrl:"http://127.0.01:5500/assets/success.html",
-       // cancelUrl:"http://127.0.01:5500/assets/cancel.html"
+       successUrl:"http://127.0.0.1:5500/pagos/exitoso.html",
+       cancelUrl:"http://127.0.0.1:5500/pagos/cancelado.html"
     })
     .then(res => {
         if (res.error){
@@ -56,4 +56,5 @@ if (e.target.matches(".cards *")) {
         }
     })
 }
-})
+});
+
