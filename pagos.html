@@ -5,26 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagos</title>
+    <title>Pagos</title> 
+     <script src="https://js.stripe.com/v3/" ></script>
 </head>
 
 <body>
 
-    <div class="container">
-        <span>productos</span>
-    </div>
+    <button id="checkout">checkout</button>
+    <!--<script type="module" src="/assets/js/script.js" Set-Cookie: widget_session=abc123; SameSite=None; Secure></script>-->
+  
+    <script>
+        var stripe = Stripe( // Stripe Acount Required
+            "pk_test_51LoDgpDQHa1SORpU4kh6Pnznhj7BxmPQIcqzz1anp61gS4ZO2yPeZCzS5iUgef9ozXtnK0CuIpmF5Wn7tNVo9zMW00mcPAXIA6"
+        )
 
-    <section class="cards" id="cards"></section>
+        document.getElementById("checkout").addEventListener("click", function(){
+            stripe.redirectToCheckout({
+                lineItems: [
+                    {
+                        price:"price_1M1cFhDQHa1SORpU1EWfoMRA",
+                        quantity: 1,
+                    },
+                ],
+                    mode:"subscription",
+                    successUrl:"https://www.google.com/",
+                    cancelUrl:"https://www.twitter.com/",
+            })
+            .then(function(result){
 
-    <template id="template-card">
-        <figure>
-            <img>
-            <figcaption></figcaption>
-        </figure>
-    </template>
+            });
+        })
+    </script>
 
-    <script src="https://js.stripe.com/v3/"></script>
-    <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>

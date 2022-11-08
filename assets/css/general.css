@@ -10463,7 +10463,7 @@ textarea.form-control {
 }
 
 .navbar .navbar-brand img {
-  width: 60px;
+  width:80px;
 }
 
 .navbar .nav-link {
@@ -10487,7 +10487,6 @@ textarea.form-control {
 }
 
 .navbar.custom-navbar.affix {
-  padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   background: url(../imgs/navbar.png);
   border-bottom: 1px solid #949b6f17;
@@ -11117,7 +11116,7 @@ section {
 }
 
 .header .navbar a{
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin:0 1rem;
     color:var(--black);
 }
@@ -11394,11 +11393,7 @@ section {
 
   .header .navbar{
       position: absolute;
-      top:110%; right:-110%;
-      width:30rem;
       box-shadow: var(--box-shadow);
-      border-radius: .5rem;
-      background: #fff;
   }
 
   .header .navbar.active{
