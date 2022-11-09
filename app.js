@@ -6,8 +6,12 @@ const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 const divCantidad= document.getElementById('template-div')
-const clasificarProductos= document.getElementById('filtro-productos')
+//const clasificarProductos= document.getElementById('filtro-productos')
 let carrito = {}
+let Keys = {
+    public:"pk_test_51LoDgpDQHa1SORpU4kh6Pnznhj7BxmPQIcqzz1anp61gS4ZO2yPeZCzS5iUgef9ozXtnK0CuIpmF5Wn7tNVo9zMW00mcPAXIA6",
+    secret:"sk_test_51LoDgpDQHa1SORpUn10FfRHDAdDHv5iJ08dj03x1OezY7ZI4vwAEeRtprguQrWcUjJpKE02mwGrTCnEiUOSb9qOt00S1A0btET"
+};
 
 
 
@@ -33,6 +37,7 @@ const pintarCards = data => {
          templateCard.querySelector('h5').textContent = item.nombre
          templateCard.querySelector('p').textContent = item.precio
          templateCard.querySelector('button').dataset.id = item.id
+         templateCard.querySelector('button').dataset.price = item.priceID 
          
          const clone =templateCard.cloneNode(true)
          fragment.appendChild(clone)
@@ -55,9 +60,24 @@ const addCarrito = e => {
     if(e.target.classList.contains('button')){
         // console.log(e.target.dataset.id)
         // console.log(e.target.parentElement)
-        setCarrito(e.target.parentElement)
+        //AQUI ira lo del video 32
+        console.log(e.target)
+        let price = e.target.getAttribute("data-price");
+
+        console.log(price)
+        Stripe(Keys.public)
+        .redirectToCheckout({
+            lineItems:[{price: price, quantity:1}],
+            mode:"payment",
+            successUrl:"http://127.0.0.1:5500/pagos/exitoso.html",
+            cancelUrl:"http://127.0.0.1:5500/pagos/cancelado.html"
+        })  
+        .then((res) => {
+            console.log(res);
+        })
+       // setCarrito(e.target.parentElement)
     }
-    e.stopPropagation()
+   // e.stopPropagation()
 }
 
 const setCarrito = item => {

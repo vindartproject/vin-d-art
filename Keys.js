@@ -1,4 +1,4 @@
-export default {
+export default let Keys = {
     public:"pk_test_51LoDgpDQHa1SORpU4kh6Pnznhj7BxmPQIcqzz1anp61gS4ZO2yPeZCzS5iUgef9ozXtnK0CuIpmF5Wn7tNVo9zMW00mcPAXIA6",
     secret:"sk_test_51LoDgpDQHa1SORpUn10FfRHDAdDHv5iJ08dj03x1OezY7ZI4vwAEeRtprguQrWcUjJpKE02mwGrTCnEiUOSb9qOt00S1A0btET"
-}
+};

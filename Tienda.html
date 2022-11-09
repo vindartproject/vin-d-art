@@ -122,7 +122,7 @@
                             <th scope="row">id</th>
                             <td>Café</td>
                             <td>1</td>
-                            <td>
+                            <td >
                                 <button class="btn btn-info btn-sm">
                                     +
                                 </button>
@@ -145,7 +145,7 @@
                         <div class="products__shape">
                             <img src="" class="img-fluid" alt="card-img-top">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" id="parent">
                             <h5 class="card-title">Nombre</h5>
                             <p class="card-text">Precio</p>
                             <button id="checkout-button" class="button button--flex products__button"> Añadir
@@ -159,18 +159,18 @@
        
     </section>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="./stripe.js"></script>
-    <script src="./app.js"></script>
+
     <!-- core  -->
     <script src="./assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="./assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
+    
     <!-- bootstrap 3 affix -->
     <script src="./assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
+    
     <!-- Isotope -->
     <script src="./assets/vendors/isotope/isotope.pkgd.js"></script>
-
+    <script src="https://js.stripe.com/v3/"></script>
+    <script type="module" src="./app.js"></script>
     <!-- LeadMark js -->
     <script type="module" src="./assets/js/leadmark.js"></script>
     <!-- JavaScript Bundle with Popper -->
