@@ -1,4 +1,4 @@
-import KEYS from "./Keys.js"
+import KEYS from "../../Keys.js"
 
 const $d = document;
 const $cards = $d.getElementById("cards");
@@ -46,7 +46,7 @@ if (e.target.matches(".cards *")) {
             price: priceId,
             quantity: 1
         }],
-        mode: "subscription",
+        mode: "suscription",
        successUrl:"http://127.0.0.1:5500/pagos/exitoso.html",
        cancelUrl:"http://127.0.0.1:5500/pagos/cancelado.html"
     })

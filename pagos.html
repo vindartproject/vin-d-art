@@ -6,37 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagos</title> 
-     <script src="https://js.stripe.com/v3/" ></script>
+
 </head>
-
 <body>
-
-    <button id="checkout">checkout</button>
-    <!--<script type="module" src="/assets/js/script.js" Set-Cookie: widget_session=abc123; SameSite=None; Secure></script>-->
-  
-    <script>
-        var stripe = Stripe( // Stripe Acount Required
-            "pk_test_51LoDgpDQHa1SORpU4kh6Pnznhj7BxmPQIcqzz1anp61gS4ZO2yPeZCzS5iUgef9ozXtnK0CuIpmF5Wn7tNVo9zMW00mcPAXIA6"
-        )
-
-        document.getElementById("checkout").addEventListener("click", function(){
-            stripe.redirectToCheckout({
-                lineItems: [
-                    {
-                        price:"price_1M1cFhDQHa1SORpU1EWfoMRA",
-                        quantity: 1,
-                    },
-                ],
-                    mode:"subscription",
-                    successUrl:"https://www.google.com/",
-                    cancelUrl:"https://www.twitter.com/",
-            })
-            .then(function(result){
-
-            });
-        })
-    </script>
-
+    <div class="container">
+        <span>Arepera Online</span>
+          <img src="https://flagcdn.com/160x120/ve.png" alt="Venezuela">
+      </div>
+      
+      <section class="card" id="cards"></section>
+      
+      <template id="template-card">
+        <figure class="arepa">
+          <img>
+          <figcaption></figcaption>
+        </figure>
+      </template>
+      <script src="https://js.stripe.com/v3/" ></script>
+<script src="./assests/js/script"></script>
 </body>
 
 </html>
