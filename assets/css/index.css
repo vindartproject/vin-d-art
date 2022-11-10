@@ -33,7 +33,7 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background: #fff;
+  background: rgb(0, 0, 0);
   cursor: pointer;
   margin: .7rem;
 }
