@@ -231,4 +231,10 @@ html {
   color: #111;
 }
 
+.section{
+  padding: 70px;
+}
 
+.btn {
+  border-radius: 10px;
+}
