@@ -69,8 +69,8 @@ const addCarrito = e => {
         .redirectToCheckout({
             lineItems:[{price: price, quantity:1}],
             mode:"payment",
-            successUrl:"http://127.0.0.1:5500/pagos/exitoso.html",
-            cancelUrl:"http://127.0.0.1:5500/pagos/cancelado.html"
+            successUrl:"https://vindart.store/exitoso.html",
+            cancelUrl:"https://vindart.store/cancelado.html"
         })  
         .then((res) => {
             console.log(res);
