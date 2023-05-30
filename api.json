@@ -65,7 +65,7 @@
     {
         "nombre":"chocolate clavos y canela 250gr",
         "id": 8,
-        "precio":7.000,
+        "precio":7000,
         "thumbnailUrl": "./assets/imgs/Chocolateclavosycanela250gr.png",
         "clasificacion":"chocolate",
         "priceID":"price_1M1sAfDQHa1SORpUG0qCH6yU"
@@ -74,7 +74,7 @@
     {
         "nombre":"Brownie con licor de cacao",
         "id": 9,
-        "precio":45.000,
+        "precio":45000,
         "thumbnailUrl": "./assets/imgs/image0.jpeg",
         "clasificacion":"postre",
         "priceID":"price_1M1sBqDQHa1SORpU3CrsYeKI"
@@ -83,7 +83,7 @@
     {
         "nombre":"Pastel de chocolate",
         "id": 10,
-        "precio":17.000,
+        "precio":17000,
         "thumbnailUrl": "./assets/imgs/image2.jpeg",
         "clasificacion":"postre",
         "priceID":"price_1M1sCxDQHa1SORpUQ8QOKoRj"
